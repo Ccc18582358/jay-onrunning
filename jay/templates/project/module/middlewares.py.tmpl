@@ -1,0 +1,45 @@
+# -*- coding:utf-8 -*-
+import re
+
+from jay.request import build_request
+from jay.spiders.jay_spider import JaySpider
+from jay.utils import CustomLoader, enrich_wrapper, ItemCollectorPath
+from $project_name.items import ${ProjectName}Item
+
+
+def url_check(variation, _type, value=None):
+    try:
+        url = variation.xpath('@data-url').extract_first()
+        value = variation.xpath('@data-attr-value').extract_first()
+    except:
+        url = variation
+    if re.search(r'(?<={}=)\d'.format(_type), url):
+        return url
+    else:
+        return url.replace(f'{_type}=', f'{_type}={value}')
+
+
+class ${ProjectName}Spider(JaySpider):
+    is_spu_found_in_bucket = True
+    name = "$project_name"
+
+    @staticmethod
+    def get_item_loader(response):
+        return CustomLoader(item=${ProjectName}Item())
+
+    def enrich_tag(self, item_loader, response, product_id):
+        pass
+
+    @enrich_wrapper
+    def enrich_scu_data(self, item_loader, response):
+        pass
+
+    def extract_next_bucket_url(self, response):
+        return None
+
+    def extract_scu_urls(self, response):
+        scu_urls = []
+        return scu_urls
+
+    def is_bad_redirect_location(self, request, response, redirect):
+        return False

@@ -1,0 +1,23 @@
+FROM python:3.6
+RUN wget https://github.com/apache/rocketmq-client-cpp/releases/download/2.0.0/rocketmq-client-cpp-2.0.0.amd64.deb
+ENV https_proxy ""
+RUN dpkg -i rocketmq-client-cpp-2.0.0.amd64.deb
+RUN pip3 config set global.index-url https://pypi.douban.com/simple
+RUN pip3 install certifi 
+RUN pip3 install Twisted==22.4.0
+RUN pip3 install scrapy==2.5.1
+RUN pip3 install kafka-python==1.4.3 
+RUN pip3 install requests==2.19.1 
+RUN pip3 install redis==3.3.8 
+RUN pip3 install bs4 
+RUN pip3 install bottle==0.12.13 
+RUN pip3 install psutil==5.6.2
+RUN pip3 install python-logstash==0.4.6 
+RUN pip3 install toolkity==1.7.4 
+RUN pip3 install twine==3.1.1 
+RUN pip3 install scrapy_redis 
+RUN pip3 install jsonpath
+RUN pip3 install scrapy-zyte-smartproxy
+RUN pip3 install scrapy_zenscrape
+RUN pip3 install rocketmq-client-python
+

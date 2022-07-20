@@ -1,0 +1,41 @@
+from jay.settings import *
+
+LOG_LEVEL = "INFO"
+BOT_NAME = 'jay'
+SPIDER_MODULES = ['sample.spiders']
+NEWSPIDER_MODULE = 'sample.spiders'
+ITEM_PIPELINES = {
+    'jay.pipelines.AdaptBaseItemToItemDocPipeline': 50,
+    'jay.pipelines.KafkaPipeline': 100,
+}
+
+DOWNLOADER_MIDDLEWARES = {
+    # default setttings
+    'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware': 100,
+    'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware': 300,
+    'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware': 350,
+    'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware': 400,
+    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,  # 500,
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,  # 550,
+    'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware': 560,
+    'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware': 580,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 620,  # 590
+    'scrapy.downloadermiddlewares.redirect.RedirectMiddleware': None,  # 600,
+    'scrapy.downloadermiddlewares.cookies.CookiesMiddleware': None,  # 700,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': None,  # 750,
+    'scrapy.downloadermiddlewares.stats.DownloaderStats': 850,
+    'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware': 900,
+    # zenscrape代理
+    # 'jay.zenscrape.ZenscrapeMiddleware': 700,
+    # settings
+    'jay.downloadermiddlewares.CustomUserAgentMiddleware': 400,
+    'jay.downloadermiddlewares.LimitedUserAgentMiddleware': 430,
+    # 'jay.downloadermiddlewares.CustomHeadersMiddleware': 450,
+    'jay.downloadermiddlewares.NewFixedRetryMiddleware': 510,
+    'jay.downloadermiddlewares.CustomCookiesMiddleware': 585,
+    # 'jay.downloadermiddlewares.CustomProxyMiddleware': 666,  # 600,
+    # 'jay.downloadermiddlewares.CustomRedirectMiddleware': 600,
+    'jay.downloadermiddlewares.logger.LoggerMiddleware': 999,
+}
+
+

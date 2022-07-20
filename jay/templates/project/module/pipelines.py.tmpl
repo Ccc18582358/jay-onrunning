@@ -1,0 +1,50 @@
+import re
+
+from toolkit import re_search
+
+from jay.adapters import ItemDocAdapter
+
+
+class ${ProjectName}ItemDocAdapter(ItemDocAdapter):
+
+    @staticmethod
+    def is_main(image_block):
+        if isinstance(image_block, dict):
+            return image_block["type"] in ["PAIR", "MAIN"]
+        return bool(image_block.count("-p-"))
+
+    @staticmethod
+    def get_type(image_block, regex=re.compile(r"-(\w+)-")):
+        if isinstance(image_block, dict):
+            return image_block["type"]
+        return re_search(regex, image_block)
+
+    @staticmethod
+    def position(image_block):
+        if isinstance(image_block, dict):
+            return "https://m.media-amazon.com/images/I/%s.jpg" % image_block["imageId"]
+        return image_block
+
+    def process_custom(self, spu_id, package, item):
+        """主要用来获取bullet和skus
+
+        :param spu_id:
+        :param package:
+        :param item:
+        :return:
+        """
+        skus = list()
+
+        refs = package['references']
+
+        o_title = self.enrich_title(spu_id, item['product_name'])
+        refs.append(o_title)
+
+        o_desc = self.enrich_desc(spu_id, item['desc'])
+        refs.append(o_desc)
+
+        o_features = self.enrich_features(spu_id, item['features'])
+        refs.append(o_features)
+
+        pass
+

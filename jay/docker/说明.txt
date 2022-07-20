@@ -1,0 +1,8 @@
+build-git:用submodule，将jay当做spider的子仓库，打包时代码全部来自git，另外有本地文件校验，本地有代码未提交时无法打包
+build-local:jay和spider代码全部来自本地文件，打包测试用
+build-requirements:jay的基础镜像依赖，加快打包速度
+
+添加submodule命令:git submodule add -b main git@github.com:jinanlongen/jay.git
+更新submodule命令:git submodule update --remote --merge
+
+更新测试00一天一天太阳  d

@@ -1,0 +1,4 @@
+[submodule "docker/jay"]
+	path = docker/jay
+	url = git@github.com:jinanlongen/jay.git
+	branch = main

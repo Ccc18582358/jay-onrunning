@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+
+from scrapy import Field, Item
+
+from jay.items import BaseItem
+from jay.utils import TakeAll
+
+
+class ${ProjectName}Item(BaseItem):
+    product_id = Field()
+    desc = Field()
+    product_name = Field()
+    features = Field(output_processor=TakeAll(), default=list())
+    specs = Field(output_processor=TakeAll(), default=list())
+
+
+
+

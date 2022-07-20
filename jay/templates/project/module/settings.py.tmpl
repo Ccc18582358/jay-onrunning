@@ -1,0 +1,16 @@
+from jay.settings import *
+
+LOG_LEVEL = "INFO"
+BOT_NAME = 'jay'
+SPIDER_MODULES = ['$project_name.spiders']
+NEWSPIDER_MODULE = '$project_name.spiders'
+DEPTH_PRIORITY = -1
+
+ITEM_PIPELINES = {
+    'jay.pipelines.AdaptPipeline': 50,
+    'jay.pipelines.AssertPipeline': 60,
+    'jay.pipelines.KafkaPipeline': 100,
+}
+
+DOWNLOADER_MIDDLEWARES = {
+}

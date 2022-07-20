@@ -1,0 +1,8 @@
+# syntax = docker/dockerfile:1.1-experimental
+FROM 192.168.200.51/spiders/jay-requirements:latest
+RUN mkdir /app
+WORKDIR /app
+COPY . /app/.
+RUN rm -f /etc/localtime && ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo "Asia/Shanghai" > /etc/timezone
+
+CMD bash run.sh ${spider} ${crawlid} ${callback} ${type} ${priority} ${full} ${extended} ${force} ${meta} ${urls} ${delay} ${repeated}
