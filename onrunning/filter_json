@@ -1,0 +1,844 @@
+{
+    "data": {
+        "filterPage": {
+            "filters": [
+                {
+                    "id": "gender",
+                    "title": "Gender",
+                    "order": "primary",
+                    "level": "variant",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Men",
+                            "value": "mens",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Women",
+                            "value": "womens",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "All Genders",
+                            "value": "",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "product",
+                    "title": "Product",
+                    "order": "primary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Shoes",
+                            "value": "shoes",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Apparel",
+                            "value": "apparel",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Accessories",
+                            "value": "accessories",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "All Products",
+                            "value": "",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "size_shoes_m",
+                    "title": "Size",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": "size",
+                    "values": [
+                        {
+                            "label": "7",
+                            "value": "7",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "7.5",
+                            "value": "7.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "8",
+                            "value": "8",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "8.5",
+                            "value": "8.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "9",
+                            "value": "9",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "9.5",
+                            "value": "9.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "10",
+                            "value": "10",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "10.5",
+                            "value": "10.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "11",
+                            "value": "11",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "11.5",
+                            "value": "11.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "12",
+                            "value": "12",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "12.5",
+                            "value": "12.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "13",
+                            "value": "13",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "14",
+                            "value": "14",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "gender": [
+                            "womens",
+                            ""
+                        ],
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "size_shoes_w",
+                    "title": "Size",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": "size",
+                    "values": [
+                        {
+                            "label": "5",
+                            "value": "5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "5.5",
+                            "value": "5.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "6",
+                            "value": "6",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "6.5",
+                            "value": "6.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "7",
+                            "value": "7",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "7.5",
+                            "value": "7.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "8",
+                            "value": "8",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "8.5",
+                            "value": "8.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "9",
+                            "value": "9",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "9.5",
+                            "value": "9.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "10",
+                            "value": "10",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "10.5",
+                            "value": "10.5",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "11",
+                            "value": "11",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "gender": [
+                            "",
+                            "mens"
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "size_apparel_m",
+                    "title": "Size",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": "size",
+                    "values": [
+                        {
+                            "label": "S",
+                            "value": "S",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "M",
+                            "value": "M",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "L",
+                            "value": "L",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "XL",
+                            "value": "XL",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "XXL",
+                            "value": "XXL",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "shoes",
+                            "accessories",
+                            ""
+                        ],
+                        "gender": [
+                            "womens",
+                            ""
+                        ],
+                        "product_classics": [
+                            "shoes",
+                            ""
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "size_apparel_w",
+                    "title": "Size",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": "size",
+                    "values": [
+                        {
+                            "label": "XS",
+                            "value": "XS",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "S",
+                            "value": "S",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "M",
+                            "value": "M",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "L",
+                            "value": "L",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "XL",
+                            "value": "XL",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "gender": [
+                            "",
+                            "mens"
+                        ],
+                        "product": [
+                            "shoes",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "shoes",
+                            ""
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "best_for",
+                    "title": "By Activity",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "All-day wear",
+                            "value": "all-day",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Road running",
+                            "value": "road",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Trail Running",
+                            "value": "trail",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Training",
+                            "value": "training",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Hiking",
+                            "value": "hiking",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Competition",
+                            "value": "competition",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "",
+                            "accessories"
+                        ]
+                    },
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "apparel_category",
+                    "title": "Category",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Jackets & Vests",
+                            "value": "jackets",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Long sleeves",
+                            "value": "long-sleeves",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Short sleeves",
+                            "value": "short-sleeves",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Pants",
+                            "value": "pants",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Shorts",
+                            "value": "shorts",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Sports bras",
+                            "value": "sports-bras",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "shoes",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "shoes",
+                            ""
+                        ]
+                    },
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "waterproof",
+                    "title": "Waterproof",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Waterproof",
+                            "value": "waterproof",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "distance",
+                    "title": "Distance",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Short",
+                            "value": "short-distance",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Medium",
+                            "value": "medium-distance",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Long",
+                            "value": "long-distance",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ],
+                        "best_for": [
+                            "all-day",
+                            "hiking"
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "cushioning",
+                    "title": "Cushioning",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Direct",
+                            "value": "direct",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Moderate",
+                            "value": "moderate",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Max",
+                            "value": "max",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ],
+                        "best_for": [
+                            "all-day",
+                            "hiking"
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "Wide Fit",
+                    "title": "Wide Fit",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Wide Fit",
+                            "value": "wide-fit",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ]
+                    },
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "shoes_condition",
+                    "title": "Conditions",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Warmer/Moderate",
+                            "value": "shoes-conditions-warmer",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Cooler",
+                            "value": "shoes-conditions-cooler",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ],
+                        "best_for": [
+                            "road",
+                            "trail",
+                            "competition",
+                            "hiking",
+                            "training"
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "accessories_category",
+                    "title": "Category",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Hats",
+                            "value": "hats",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Socks",
+                            "value": "running-socks",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "shoes",
+                            "apparel",
+                            ""
+                        ],
+                        "product_classics": [
+                            "shoes",
+                            "apparel",
+                            ""
+                        ]
+                    },
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "color",
+                    "title": "Color",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": "color",
+                    "values": [
+                        {
+                            "label": "Black",
+                            "value": "black",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "White",
+                            "value": "white",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Grey",
+                            "value": "grey",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Blue",
+                            "value": "blue",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Red",
+                            "value": "red",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Green",
+                            "value": "green",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Yellow",
+                            "value": "yellow",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Purple",
+                            "value": "purple",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Brown",
+                            "value": "brown",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Beige",
+                            "value": "beige",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Orange",
+                            "value": "orange",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Pink",
+                            "value": "pink",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "price",
+                    "title": "Price Range",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "$",
+                            "value": "low-price",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "$$",
+                            "value": "medium-price",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "$$$",
+                            "value": "high-price",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "apparel_condition",
+                    "title": "Weather Condition",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Warm weather",
+                            "value": "Warm",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Cold weather",
+                            "value": "cold",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Wet weather",
+                            "value": "wet",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Indoor",
+                            "value": "indoor",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "shoes",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "shoes",
+                            ""
+                        ]
+                    },
+                    "includedInPath": true,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "lacing",
+                    "title": "Lacing",
+                    "order": "secondary",
+                    "level": "item",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "Elastic speed lacing",
+                            "value": "speed-lacing",
+                            "__typename": "FilterPageFilterValue"
+                        },
+                        {
+                            "label": "Standard lacing",
+                            "value": "standard-lacing",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {
+                        "product": [
+                            "apparel",
+                            "accessories",
+                            ""
+                        ],
+                        "product_classics": [
+                            "apparel",
+                            ""
+                        ]
+                    },
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                },
+                {
+                    "id": "release_date",
+                    "title": "Release Date",
+                    "order": "secondary",
+                    "level": "variant",
+                    "type": null,
+                    "values": [
+                        {
+                            "label": "New Arrivals",
+                            "value": "new-arrivals",
+                            "__typename": "FilterPageFilterValue"
+                        }
+                    ],
+                    "excludeIf": {},
+                    "includedInPath": false,
+                    "__typename": "FilterPageFilter"
+                }
+            ],
+            "__typename": "FilterPage"
+        }
+    }
+}
